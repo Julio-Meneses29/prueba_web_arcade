@@ -1,0 +1,40 @@
+*{box-sizing:border-box;margin:0;padding:0;font-family:Segoe UI, Arial, sans-serif}
+
+body{background:radial-gradient(circle at 20% 20%, #0d0d26 0%, #070711 50%, #000000 100%);color:#e6f7ff;text-align:center;min-height:100vh;}
+
+header{padding:22px 20px;background:linear-gradient(120deg,#0f0f34 0%,#1a0033 50%,#0a0015 100%);box-shadow:0 0 30px rgba(0,204,255,0.45),0 0 90px rgba(255,0,255,0.35)}
+header h1{color:#73f4ff;text-shadow:0 0 24px #00d7ff,0 0 44px #9d00ff,0 0 68px #ff00e2}
+header p{color:#8fffac;text-shadow:0 0 12px #00ffb9}
+
+.juegos{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;padding:20px}
+
+.card{background:linear-gradient(145deg,#120027,#1f003f 70%);border:2px solid #42e7ff;border-radius:18px;padding:14px;width:260px;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;box-shadow:0 0 24px rgba(66,231,255,0.45);cursor:pointer}
+.card:hover{transform:scale(1.06);box-shadow:0 0 60px rgba(0,255,255,0.65),0 0 70px rgba(173,0,255,0.5);border-color:#00e9ff}
+
+.card img{width:100%;height:210px;object-fit:cover;border-radius:12px;border:1px solid rgba(90,225,255,0.7)}
+
+.videos{padding:24px;background:rgba(17,7,30,0.5);border-radius:14px;margin:18px}
+.videos h2{color:#52f1ff;text-shadow:0 0 22px #52f1ff,0 0 32px #9c00ff}
+.videos video, iframe{width:320px;margin:10px;border-radius:12px;border:2px solid #65d2ff;box-shadow:0 0 24px #00b8ff}
+
+.contacto{padding:24px;background:rgba(9,4,23,0.6);border-radius:14px;margin:16px}
+.contacto h2{color:#ffce00;text-shadow:0 0 22px #ffce00,0 0 42px #ff6dff}
+form{display:flex;flex-direction:column;align-items:center;gap:12px}
+
+input,textarea{width:270px;padding:12px;border-radius:10px;border:2px solid #6de3ff;background:rgba(6,4,24,0.8);color:#b8f9ff;box-shadow:0 0 12px rgba(30,249,255,0.4)}
+
+button{padding:12px 26px;background:linear-gradient(120deg,#ff00de,#6100ff);border:2px solid #40e0ff;border-radius:10px;cursor:pointer;color:#fff;font-weight:800;box-shadow:0 0 26px rgba(255,0,224,0.7);transition:.25s}
+button:hover{background:linear-gradient(120deg,#ff42ff,#00f5ff);border-color:#a8fffe;box-shadow:0 0 46px #ff83ff,0 0 26px #00f0ff}
+
+footer{padding:17px;background:linear-gradient(160deg,#12002b,#1b003b);margin-top:24px;box-shadow:0 0 26px rgba(0,200,255,0.4);border-top:2px solid #43f1ff}
+
+@media(max-width:600px){
+.juegos{flex-direction:column;align-items:center}
+}
+
+@keyframes glow{
+  0%,100%{text-shadow:0 0 10px #00ffff,0 0 20px #00ffff}
+  50%{text-shadow:0 0 20px #00ffff,0 0 40px #00ffff,0 0 60px #ff00ff}
+}
+
+h2{animation:glow 2s infinite}
